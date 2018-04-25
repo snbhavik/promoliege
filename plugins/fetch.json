@@ -7,18 +7,6 @@
         "is_top_level": true,
         "variables": {}
     },
-    "com.telerik.plugin.telerikanalytics": {
-        "source": {
-            "type": "local",
-            "path": "/Users/builder/.TelerikPluginsCache/com.telerik.plugin.telerikanalytics/3.4.1"
-        },
-        "is_top_level": true,
-        "variables": {
-            "AUTO_TRACK_EXCEPTIONS": "True",
-            "AUTO_TRACK_KENDO_EVENTS": "True",
-            "PRODUCT_ID": "52e371b182d54ed4b81d2794686362fd"
-        }
-    },
     "uk.co.whiteoctober.cordova.appversion": {
         "source": {
             "type": "git",

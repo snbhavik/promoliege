@@ -55,14 +55,9 @@
     "cordova-plugin-vibration",
     "cordova-plugin-whitelist",
     "com.phonegap.plugins.PushPlugin@3.2.0",
-    "com.telerik.plugin.telerikanalytics@3.4.1",
     "nl.x-services.plugins.socialsharing@5.0.11"
   ],
   "CordovaPluginVariables": {
-    "com.telerik.plugin.telerikanalytics": {
-      "AUTO_TRACK_EXCEPTIONS": "True",
-      "AUTO_TRACK_KENDO_EVENTS": "True",
-      "PRODUCT_ID": "52e371b182d54ed4b81d2794686362fd"
-    }
+    
   }
 }

@@ -9,14 +9,6 @@ module.exports = [
         ]
     },
     {
-        "id": "com.telerik.plugin.telerikanalytics.EqatecAnalytics",
-        "file": "plugins/com.telerik.plugin.telerikanalytics/www/EqatecAnalytics.js",
-        "pluginId": "com.telerik.plugin.telerikanalytics",
-        "clobbers": [
-            "plugins.EqatecAnalytics"
-        ]
-    },
-    {
         "id": "cordova-plugin-file.DirectoryEntry",
         "file": "plugins/cordova-plugin-file/www/DirectoryEntry.js",
         "pluginId": "cordova-plugin-file",
@@ -302,7 +294,6 @@ module.exports.metadata =
 {
     "cordova-plugin-whitelist": "1.3.3",
     "uk.co.whiteoctober.cordova.appversion": "0.1.7",
-    "com.telerik.plugin.telerikanalytics": "3.4.1",
     "cordova-plugin-compat": "1.2.0",
     "cordova-plugin-file": "4.3.1",
     "cordova-plugin-file-transfer": "1.6.1",

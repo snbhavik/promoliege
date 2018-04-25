@@ -10,12 +10,6 @@
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.mikodigital.promosliege"
         },
-        "com.telerik.plugin.telerikanalytics": {
-            "PRODUCT_ID": "52e371b182d54ed4b81d2794686362fd",
-            "AUTO_TRACK_KENDO_EVENTS": "True",
-            "AUTO_TRACK_EXCEPTIONS": "True",
-            "PACKAGE_NAME": "com.mikodigital.promosliege"
-        },
         "cordova-plugin-file": {
             "PACKAGE_NAME": "com.mikodigital.promosliege"
         },
