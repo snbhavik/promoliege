@@ -1,0 +1,35 @@
+<div id="categorieView" data-role="view" data-layout="main" data-model="app.categories" data-before-show="app.categories.beforeShow" data-show="app.categories.onShow" data-after-show="app.categories.afterShow">
+ 	<!--<div id="messageCategories">
+
+        <h3>
+            Pour commencer, sélectionnez vos centres d'intérêt dans la section réglages.
+        </h3>
+        <p>
+            <a data-role="button" data-click="goToOptions">Choisir mes centres d'intérêts</a>
+        </p>
+    </div>-->
+    <div class="mikoLoader"><img src="resources/loader.gif" /></div>
+    <ul id="categoriesListe" class="liste" data-role="listview" data-style="" data-template="categoriesTemplate" 
+        data-bind="{ source: categoriesModel.dataSource, events: {click: categoriesModel.itemClick}}" 
+        data-pull-to-refresh="false" data-endless-scroll="false"
+        data-auto-bind="false"
+        >
+    </ul>
+    <div data-role="modalview" id="emptyCategorieMessage"  class="modal">
+        <p>
+           Cette catégorie est actuellement vide.
+        </p>
+        <p>
+             <!--<a data-role="button" data-click="launchFacebookShare" data-align="center">Partager l'App</a>-->
+             <a data-role="button" data-click="closeModal">Retour</a>
+        </p>
+    </div>
+    <!--<div data-role="button" data-click="resetRedBoutons">re-initialiser les boutons rouges</div>-->
+    <script type="text/x-kendo-template" id="categoriesTemplate">
+        <div class="details#: data['visibility'] ##: data['empty'] #" id="categorie_#: data['Id'] #">
+            <img src="resources/star.png" class="oui"/>
+			<h3 class="categorie">#: data['nom'] # <span class="promoCountBlack">(#: data['totalNew'] #)</span></h3>
+            <img src="resources/go_rose.png" class="go"/>
+        </div>
+    </script>
+</div>

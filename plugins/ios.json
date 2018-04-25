@@ -1,0 +1,64 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.mikodigital.promosliege"
+        },
+        "com.telerik.plugin.telerikanalytics": {
+            "PRODUCT_ID": "52e371b182d54ed4b81d2794686362fd",
+            "AUTO_TRACK_KENDO_EVENTS": "True",
+            "AUTO_TRACK_EXCEPTIONS": "True",
+            "PACKAGE_NAME": "com.mikodigital.promosliege"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.mikodigital.promosliege"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "com.mikodigital.promosliege"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.mikodigital.promosliege"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.mikodigital.promosliege"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.mikodigital.promosliege"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.mikodigital.promosliege"
+        },
+        "cordova-plugin-vibration": {
+            "PACKAGE_NAME": "com.mikodigital.promosliege"
+        },
+        "com.phonegap.plugins.PushPlugin": {
+            "PACKAGE_NAME": "com.mikodigital.promosliege"
+        },
+        "nl.x-services.plugins.socialsharing": {
+            "PACKAGE_NAME": "com.mikodigital.promosliege"
+        },
+        "com.telerik.cordovaPlatformSpecificFiles": {
+            "PACKAGE_NAME": "com.mikodigital.promosliege"
+        }
+    },
+    "dependent_plugins": {
+        "uk.co.whiteoctober.cordova.appversion": {
+            "PACKAGE_NAME": "com.mikodigital.promosliege"
+        },
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.mikodigital.promosliege"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.mikodigital.promosliege"
+        },
+        "cordova-plugin-globalization": {
+            "PACKAGE_NAME": "com.mikodigital.promosliege"
+        }
+    }
+}

@@ -1,0 +1,68 @@
+{
+  "Framework": "Cordova",
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "6.4.0",
+  "ProjectName": "com.mikodigital.promosliege",
+  "ProjectGuid": "e7d97e0b-d75a-4ad1-adda-871ae3845b78",
+  "projectVersion": "1",
+  "AppIdentifier": "com.mikodigital.promosliege",
+  "DisplayName": "PromoLiège",
+  "Author": "Miko Digital LLC",
+  "Description": "Toutes vos promotions en une application",
+  "BundleVersion": "9.0",
+  "AndroidVersionCode": "14",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [
+    "remote-notification"
+  ],
+  "AndroidPermissions": [
+    "android.permission.INTERNET",
+    "android.permission.VIBRATE"
+  ],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "True",
+  "iOSStatusBarStyle": "Default",
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [
+    "ID_CAP_NETWORKING",
+    "ID_CAP_WEBBROWSERCOMPONENT"
+  ],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{606020bd-12ef-4fca-94c3-540f0ed38fe6}",
+  "WP8ProductID": "{6cd6012d-6684-4b03-83a0-f424aeb1beb4}",
+  "WPSdk": "8.0",
+  "WP8PackageIdentityName": "1234Telerik.testUI",
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ],
+  "CorePlugins": [
+    "cordova-plugin-file",
+    "cordova-plugin-file-transfer",
+    "cordova-plugin-inappbrowser",
+    "cordova-plugin-network-information",
+    "cordova-plugin-splashscreen",
+    "cordova-plugin-statusbar",
+    "cordova-plugin-vibration",
+    "cordova-plugin-whitelist",
+    "com.phonegap.plugins.PushPlugin@3.2.0",
+    "com.telerik.plugin.telerikanalytics@3.4.1",
+    "nl.x-services.plugins.socialsharing@5.0.11"
+  ],
+  "CordovaPluginVariables": {
+    "com.telerik.plugin.telerikanalytics": {
+      "AUTO_TRACK_EXCEPTIONS": "True",
+      "AUTO_TRACK_KENDO_EVENTS": "True",
+      "PRODUCT_ID": "52e371b182d54ed4b81d2794686362fd"
+    }
+  }
+}

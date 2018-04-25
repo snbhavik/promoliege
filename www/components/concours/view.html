@@ -1,0 +1,26 @@
+<div id="concoursView" data-role="view" data-layout="main" data-model="app.concours" data-before-show="app.concours.beforeShow" data-show="app.concours.onShow" data-after-show="app.concours.afterShow">
+    <div class="mikoLoader"><img src="resources/loader.gif" /></div>
+    <ul id="concoursList"
+        class="liste" 
+        data-role="listview"
+        data-style="" 
+        data-template="concoursTemplate" 
+        data-bind="{ source: concoursModel.dataSource, events: {click: concoursModel.itemClick}}"
+        data-pull-to-refresh="true" 
+        data-endless-scroll="false"
+         data-auto-bind="true"
+        >
+    </ul>
+    
+    <script type="text/x-kendo-template" id="concoursTemplate">
+        <div class="details#: data['hideImage'] #">
+			<div class="listImageContainer#: data['hideImage'] #">
+				<img class="promoImage" src="#: data['imageUrl'] #" />
+			</div>
+            <h3 class="commercant #: data['withImage'] #">#: data['titre'] #</h3>
+            <p class="nom #: data['withImage'] #">Du #: data['date1'] # au #: data['date2'] #</p>
+			<a data-url="#: data['url'] #" class="concoursLien#: data['ctaClass'] #" data-click="launchConcours" data-role="button" data-icon="action">#: data['cta'] #</a>
+			<div class="breaker"></div>
+        </div>
+    </script>
+</div>

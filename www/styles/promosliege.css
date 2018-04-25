@@ -1,0 +1,765 @@
+#kendoUiMobileApp .km-view,.km-flat .km-content{
+    background: white;
+    color: black;
+}
+
+.km-flat .km-switch-handle,
+.km-flat .k-slider-selection,
+.km-flat .km-switch-background
+{
+    color: #d60b52;
+}
+
+.km-flat .km-loader,
+.km-flat .km-rowinsert,
+.km-flat .km-state-active,
+.km-flat .km-scroller-pull,
+.km-flat .k-slider-selection,
+.km-flat .km-touch-scrollbar,
+.km-flat .km-pages .km-current-page,
+.km-flat .k-slider .k-draghandle,
+.km-flat .k-slider .k-draghandle:hover,
+.km-flat .km-tabstrip .km-state-active,
+.km-flat .km-scroller-refresh.km-load-more,
+.km-flat .km-popup .k-state-hover,
+.km-flat .km-popup .k-state-focused,
+.km-flat .km-popup .k-state-selected,
+.km-flat .km-actionsheet > li > a:active,
+.km-flat .km-actionsheet > li > a:hover,
+.km-flat li.km-state-active .km-listview-link,
+.km-flat li.km-state-active .km-listview-label,
+.km-flat .km-listview-label input[type=radio]:checked,
+.km-flat .km-listview-label input[type=checkbox]:checked
+{
+    background: #d60b52;
+}
+
+.km-flat .km-filter-wrap > input:focus
+{
+    border-color: #d60b52;
+}
+
+.km-flat .km-rowinsert, .km-flat .km-state-active, .km-flat .km-scroller-pull, .km-flat .km-loader:before, .km-flat .k-slider-selection, .km-flat .km-touch-scrollbar, .km-flat .km-pages .km-current-page, .km-flat .k-slider .k-draghandle, .km-flat .k-slider .k-draghandle:hover, .km-flat .km-tabstrip .km-state-active, .km-flat .km-scroller-refresh.km-load-more, .km-flat .km-popup .k-state-hover, .km-flat .km-popup .k-state-focused, .km-flat .km-popup .k-state-selected, .km-flat .km-actionsheet>li>a:active, .km-flat .km-actionsheet>li>a:hover, .km-flat .km-actionsheet>li>.km-state-active, .km-flat li.km-state-active .km-listview-link, .km-flat li.km-state-active .km-listview-label, .km-flat .km-listview-label input[type=radio]:checked, 
+.km-flat .km-listview-label input[type=checkbox]:checked{
+    background: #7f7f7f;
+}
+/* -------- HEADER & FOOTER -------- */
+header{
+    background: #d60b52;
+    position: relative;
+}
+#logo{
+    width: 202px;
+    height: auto;
+    margin: 0 auto;
+    padding: 13px 0;
+    display: block;
+}
+#kendoUiMobileApp #menutop,#kendoUiMobileApp #launchCategories{
+    background: transparent;
+    padding:0;
+    margin: 0;
+    border:none;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display:block;
+    padding: 27px 15px 15px 15px;
+}
+#kendoUiMobileApp #retour{
+    background: transparent;
+    padding:0;
+    margin: 0;
+    border:none;
+    position: absolute;
+    /*left: 30px;*/
+    top: 0px;
+    display:block;
+    padding: 27px 15px 15px 15px;
+}
+#kendoUiMobileApp #launchCategories{
+	/*background:grey;*/
+	font-size: 25px;
+	height: auto;
+	box-sizing: border-box;
+	line-height: 1;
+	padding: 12px 5% 20px 20px;
+	margin: 0;
+	left: auto;
+	right: 0;
+	top: 3px;
+	color: white;
+}
+#kendoUiMobileApp #launchCategories .km-icon{
+	margin: 0;
+	margin-bottom: 8px;
+}
+#kendoUiMobileApp #launchCategories .km-text{
+    display: block;
+    font-size: 12px;
+    text-align: center;
+}
+#kendoUiMobileApp #retour img.hidden,#kendoUiMobileApp #launchCategories.hidden{
+  display: none;  
+}
+#kendoUiMobileApp #retour img{
+	width: auto;
+    height: 22px;
+    padding: 0;
+    margin: 0;
+}
+#kendoUiMobileApp #reglages,
+#kendoUiMobileApp #cadeau{
+    height: 40px;
+    width: auto;
+    padding: 6px 0 3px 0;
+	position: relative;
+}
+#kendoUiMobileApp #navigation-container .km-button {
+    background: #7f7f7f;
+}
+#kendoUiMobileApp #navigation-container .km-button.km-state-active {
+   background: #d60b52;
+}
+
+#kendoUiMobileApp .km-footer .km-text{
+	margin-bottom: 0px;
+	font-size: 12px;
+	line-height: 1;
+}
+#promoCounter{
+	
+}
+/* -------- ELEMENTS DE L APP -------- */
+#kendoUiMobileApp .mikoLoader{
+    padding: 50px 0 10px 0;
+}
+#kendoUiMobileApp .mikoLoader img{
+	display: block;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+}
+.breaker{
+    clear:both;
+}
+/* -------- PAGE REGLAGES -------- */
+#kendoUiMobileApp .advancedSetting{    
+    display: block;
+    padding: 0;
+    margin: 0;
+    border-style: none;
+    border-width: 0;
+    border-radius: 0;
+    border-bottom: 1px #cacaca solid;
+    text-align: left;
+    background: transparent;
+}
+#kendoUiMobileApp .advancedSetting.km-state-active{
+    color: black;
+    background: #cacaca;
+}
+#kendoUiMobileApp .advancedSetting h3{
+    display: block;
+    margin: 0;
+    text-align: left;
+    padding-top: 12px;
+    line-height: 1;
+}
+#kendoUiMobileApp .advancedSetting span{
+ 	padding-bottom: 8px;
+    display: inline-block;
+}
+.advancedSetting img{
+    height: 27px;
+    width: auto;
+    margin-left: 20px;
+    margin-top: 14px;
+/*     margin-bottom: 10px; */
+    margin-right: 11px;
+    float: left;
+}
+#settingsHappyYou img{
+position: relative;
+top: -1px;
+}
+#kendoUiMobileApp ul#reglagesListe{
+    
+}
+#kendoUiMobileApp ul#reglagesListe .reglage{
+    border-bottom: 1px #cacaca solid;
+    color: black;
+    margin: 0;
+	background:white; 
+}
+#kendoUiMobileApp ul#reglagesListe .reglage .categorie{
+    margin: 0;
+    padding : 15px 0px 15px 20px;
+    background: white;
+    float: left;
+	background:white; 
+}
+#kendoUiMobileApp ul#reglagesListe img{
+    height: 30px;
+    width: auto;
+    margin-right: 20px;
+    margin-top: 10px;
+    display:none;
+    float:right;
+	background:white; 
+}
+#kendoUiMobileApp ul#reglagesListe img.show{
+    display: block;
+}
+
+.km-root .km-pane .km-view .km-cadeau{
+    background-image: url("../resources/cadeau-noir.png");
+    -webkit-background-clip: border-box;
+    height: 16px;
+    width: 16px;
+    background-size: 16px 16px;
+}
+.km-root .km-pane .km-view .km-reglages{
+    background-image: url("../resources/reglages-noir.png");
+    -webkit-background-clip: border-box;
+    height: 16px;
+    width: 16px;
+    background-size: 16px 16px;
+}
+/* -------- PAGE CATEGORIES & PROMOTIONS -------- */
+
+#categorieView.styled .km-content{
+    background: #efefef;
+}
+#messageCategories{
+    display:none;
+    padding: 20px;
+/* 	margin: 10px auto;
+    border-radius: 10px;
+    width: 300px; */
+}
+#messageCategories h3{
+	text-align: center;
+    margin: 40px auto 50px auto;
+    line-height: 1.5;
+    max-width: 300px;
+}
+#messageCategories .colored{
+/* 	color: #d60b52; */
+}
+#messageCategories p{
+	text-align: center;
+}
+#kendoUiMobileApp ul.liste li{
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+#kendoUiMobileApp .details{
+    padding: 20px;
+    background: #fff;
+    position: relative;
+}
+#kendoUiMobileApp #promotionsList .details,
+#kendoUiMobileApp #concoursList .details,
+#kendoUiMobileApp #evenementsList .details
+{
+   /*margin-top: 1px; */
+   border-bottom: 1px #7f7f7f solid;
+   padding:0;
+   position: relative;
+}
+#kendoUiMobileApp #categoriesListe .details{
+	border-bottom: 1px #7f7f7f solid;
+}
+#kendoUiMobileApp #promotionsList .details.interested h3{
+	/*padding-left: 25px;
+	position: relative;*/
+}
+#kendoUiMobileApp #promotionsList .details.interested h3:before{
+  position: absolute;
+  /*position: relative;*/
+  display: inline-block;
+  content:"";
+  right: 10px;
+  bottom: 10px;
+  background-image: url('../resources/star.png');
+  height: 20px;
+  width: 20px;
+  background-position: center center;
+  background-size: cover;
+}
+#kendoUiMobileApp #promotionsList .details .listImageContainer,
+#kendoUiMobileApp #concoursList .details .listImageContainer,
+#kendoUiMobileApp #evenementsList .details .listImageContainer
+{
+	/*max-height: 125px;*/
+	overflow:hidden;
+	/*width: 35%;*/
+	float: left;
+	/*margin-right: 5%;*/
+	width: 135px;
+	height: 135px;
+}
+#kendoUiMobileApp #evenementsList .details .listImageContainer{
+	background-position: center center;
+	background-size: cover;
+}
+
+.listImageContainer.hideImage{
+	display:none;
+}
+#kendoUiMobileApp #promotionsList .details img,
+#kendoUiMobileApp #concoursList .details img{
+	width:100%;
+	min-height: 135px;
+	display: block;
+}
+
+#kendoUiMobileApp #promotionsList .details h3,
+#kendoUiMobileApp #concoursList .details h3,
+#kendoUiMobileApp #evenementsList .details h3
+{
+	padding-top: 10px;
+}
+
+#kendoUiMobileApp #promotionsList .details h3.withImage,
+#kendoUiMobileApp #concoursList .details h3.withImage,
+#kendoUiMobileApp #promotionsList .details p.withImage,
+#kendoUiMobileApp #concoursList .details p.withImage,
+#kendoUiMobileApp #evenementsList .details p.withImage,
+#kendoUiMobileApp #evenementsList .details h3.withImage{
+	font-size: 15px;
+	line-height: 1;
+	margin-left: 145px;
+}
+#kendoUiMobileApp #promotionsList .details h3:not(.withImage),
+#kendoUiMobileApp #concoursList .details h3:not(.withImage),
+#kendoUiMobileApp #promotionsList .details p:not(.withImage),
+#kendoUiMobileApp #concoursList .details p:not(.withImage),
+#kendoUiMobileApp #concoursList .concoursLien{
+	font-size: 15px;
+	line-height: 1;
+	margin-left: 10px;
+}
+#kendoUiMobileApp #concoursList .concoursLien.jouer{
+	background: white;
+}
+#kendoUiMobileApp #promotionsList .details.hideImage,
+#kendoUiMobileApp #concoursList .details.hideImage,
+#kendoUiMobileApp #evenementsList .details.hideImage
+{
+	padding-bottom: 10px;
+}
+#kendoUiMobileApp #promotionsList .details.isAdeal a{
+	margin-left: 10px;
+}
+#kendoUiMobileApp .details img.oui{
+	display: block;
+	float: left;
+	height: 30px;
+    width: auto;
+    margin-right: 10px;
+    margin-top: -5px;
+
+}
+#kendoUiMobileApp .details.hidden img.oui{
+    display:none;
+}
+#kendoUiMobileApp .details h3,
+#kendoUiMobileApp .details p{
+    margin: 0;
+    color: black;
+}
+#kendoUiMobileApp #promotionsList .details p{
+	margin-bottom: 10px;
+}
+#kendoUiMobileApp #concoursList .details p{
+	margin-bottom: 5px;
+}
+#kendoUiMobileApp .details.empty{
+    background: #efefef;
+}
+#kendoUiMobileApp #categoriesListe .details.empty{
+	display:none;
+}
+.promoCount{
+	color: white;
+}
+.promoCountBlack{
+    color: #000;
+}
+#kendoUiMobileApp .details.empty .go{
+    display: none;
+}
+#kendoUiMobileApp .modal{
+    width: 250px;
+    border-radius: 5px;
+}
+#kendoUiMobileApp #emptyCategorieMessage a{
+   
+}
+#kendoUiMobileApp .new{
+    color: white;
+    background: red;
+    display: block;
+    height: 26px;
+    width: 26px;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 13px;
+    border: none;
+    line-height: 12px;
+    padding: 7px 0 0px 0;
+    margin: 0;
+    position: absolute;
+    right: 45px;
+    top: 17px;
+}
+#kendoUiMobileApp .new.hidden{
+	display: none;
+}
+#kendoUiMobileApp img.go{
+    display:block;
+    height: 22px;
+    width: auto;
+    position: absolute;
+    right: 18px;
+    top: 18px;
+}
+
+/* -------- PAGE UNE PROMOTION -------- */
+
+#kendoUiMobileApp .details h3.commercant{
+    margin-bottom: 10px;
+}
+#kendoUiMobileApp .details p.nom{
+    color: #d60b52;
+    /*padding: 10px 0;*/
+    /*border: 2px #d60b52 dashed;*/
+    border-left: none;
+    border-right: none;
+    font-weight: bold;
+}
+#kendoUiMobileApp .details p.conditions{
+    color: #d60b52;
+    padding: 10px 0;
+    border-bottom: 2px #d60b52 dashed;
+    
+}
+#kendoUiMobileApp .details p.conditions #conditionsLink{
+	color: black;
+    margin-top: 0.4rem;
+}
+#kendoUiMobileApp #pdvs.km-list>li{
+    border: none;
+    border-bottom: 2px dashed rgba(0,0,0,0.1);
+    -webkit-box-shadow:none;
+    box-shadow: none;
+    background: transparent;
+/*     padding:4px 10px; */
+/*     border: 1px rgba(0,0,0,0.1) solid; */
+/*     border-radius: 3px; */
+    margin: 10px 0;
+    padding:0;
+    padding-bottom:10px;
+}
+#kendoUiMobileApp #pdvs.km-list>li:first-child{
+/*     border-top: none; */
+}
+#kendoUiMobileApp #pdvs.km-list>li
+#kendoUiMobileApp .details p.informations{
+    margin: 5px 0 0px 0;
+    padding-bottom: 5px;
+    line-height: 22px;
+}
+#kendoUiMobileApp .details p.informations span{
+text-transform: capitalize;
+}
+#kendoUiMobileApp .details p span.adresse,
+#kendoUiMobileApp .details p span.horaire,
+#kendoUiMobileApp .details p span.telephone{
+    
+}
+#kendoUiMobileApp .actions{
+/*     padding-top: 5px; */
+/*     
+    border-top:1px #d60b52 solid; */
+}
+#kendoUiMobileApp .details .km-button{
+    margin-top: 0.4rem;
+    font-size: 0.8em;
+    line-height: normal;
+}
+#kendoUiMobileApp .details .actions{
+/*     text-align: center; */
+/*     margin-left: 12px; */
+padding-top:10px;
+}
+#kendoUiMobileApp .details .actions .km-button{
+    margin-top: 0;
+    line-height: normal;
+}
+.km-root .km-pane .km-view .km-myMap{
+    background-image: url("../resources/map.png");
+    -webkit-background-clip: border-box;
+    height: 14px;
+    width: 14px;
+    background-size: 14px 14px;
+}
+.km-root .km-pane .km-view .km-myPhone{
+    background-image: url("../resources/myPhone.png");
+    -webkit-background-clip: border-box;
+    height: 14px;
+    width: 14px;
+    background-size: 14px 14px;
+    margin-right: 0;
+}
+.km-root .km-pane .km-view .km-myFacebook{
+    background-image: url("../resources/facebook.png");
+    -webkit-background-clip: border-box;
+    height: 14px;
+    width: 14px;
+    background-size: 14px 14px;
+}
+.km-root .km-pane .km-view .km-cart,.km-root .km-pane .km-view .km-globe{
+    -webkit-background-clip: border-box;
+    height: 14px;
+    width: 14px;
+    background-size: 14px 14px;
+}
+
+
+#kendoUiMobileApp .details #promoImageLoader{
+   padding: 50px 0 40px 0;
+    border-bottom: 2px #d60b52 dashed;
+}
+#kendoUiMobileApp .details #imageContainer{
+    border-bottom: 2px #d60b52 dashed;
+}
+#kendoUiMobileApp .details img{
+    max-width: 450px;
+   
+}
+#kendoUiMobileApp .details img#promoImage{
+    width: 100%;
+	padding: 13px 0;
+    
+    margin-bottom:0;
+}
+#connectezVousAInternet{
+       border: 1px #d60b52 solid;
+    color: #d60b52;
+    margin-top: 10px;
+    padding: 8px 12px;
+    border-radius: 3px;
+    line-height: 1.4em;
+}
+/* -------- HAPPY YOU -------- */
+
+
+#happyYouView .km-content{
+	background: #ebebeb;
+}
+	  
+#happyYouView img#happyYou{
+	width: 100%;
+	max-height: none;
+	display: block;
+}
+#happyYouView  #sloganHappyYou{
+	text-align: center;
+	display:block;
+	width: auto;
+	margin: 0;
+	padding: 1.1em 1em; 
+	margin-bottom: 0.2em;
+	background: white;
+	font-size: 16px;
+}
+div#sib_embed_signup .needsfilled input {border-color: #B94A48 !important; color: #B94A48 !important;}
+div#sib_embed_signup .needsfilled {color: #B94A48 !important;}
+div#sib_embed_signup input[type="text"] {
+	border: 1px solid #CCCCCC;
+	border-radius: 0px;}
+div#sib_embed_signup div.message_area {position: relative;padding: 10px 30px 10px 10px; margin: 0px 0px 10px 0px;font-size:14px; border-radius: 5px;-webkit-border-radius: 5px; -moz-border-radius: 5px;box-sizing: border-box;}
+div#sib_embed_signup div.message_area button.close {position: absolute;right: 8px;top: 8px;color: inherit;background: 0 0;border: 0;padding: 0px;-webkit-appearance: none;cursor: pointer;font-weight: bold;font-size: 14px;}
+.tipicon{cursor: pointer;padding: 3px 7px;font-size: 12px;font-weight: bold;line-height: 1.2;color: #fff;text-align: center;vertical-align: baseline;background-color: #999;border-radius: 10px;text-decoration: none;}
+.tooltip{display: inline;position: absolute;left: 97%;}
+.tooltip:hover:after{background: #333;background: rgba(0,0,0,.8);border-radius: 5px;color: #fff;content: attr(data-title);right: -2px;bottom: 26px;padding: 5px 15px;position: absolute;z-index: 98;width: 220px;}
+.tooltip_small:hover:after{padding: 5px 5px; width: 150px;}
+.tooltip:hover:before{border: solid;border-color: #333 transparent;border-width: 6px 6px 0 6px;bottom: 20px;content: "";left: 1px;position: absolute;z-index: 99;}
+div#sib_embed_signup .forms-builder-footer,div#sib_embed_signup div.description,div#sib_embed_signup .fake-label,div#sib_embed_signup .row  {font-size: 17px;}
+div#sib_embed_signup .button{font-size: 14px;}
+div#sib_embed_signup input {
+	font-size: 11px;
+font-weight: bold;
+}
+div#sib_embed_signup .sib-containter h1 {color: #232323;}
+div#sib_embed_signup .sib-container {color: #343434;}
+div#sib_embed_signup .sib-container .button{color: #ffffff;}
+div#sib_embed_signup .forms-builder-wrapper{ max-width: 540px;}
+div#sib_embed_signup .header{ padding: 0 20px;}
+div#sib_embed_signup h1.title{ lineHeight: 50px;}
+div#sib_embed_signup h3.company-name{ lineHeight: 35px;}
+div#sib_embed_signup div.description{ padding: 0 20px 15px;}
+div#sib_embed_signup input[type=text]{ padding: 10px 4px;width:100% !important;box-sizing: border-box;}
+
+div#sib_embed_signup{
+	
+}
+div#sib_embed_signup div.row{ 
+	padding: 1em 1em 0 1em; 
+}
+#DATE_DE_NAISSANCE{
+	display:none;
+}
+#mikoDay,#mikoMonth,#mikoYear{
+	width: 32%;
+	margin: 0;
+	display: block;
+	float: left;
+	margin-bottom: 5px;
+}
+#mikoMonth,#mikoYear{
+	margin-left: 2%;
+}
+.lbl-tinyltr{ 
+	/* date de naissance */
+	display: none;
+	font-size: 13px;
+	color: black;
+	margin-top :0px;
+	margin-bottom:5px;
+	font-weight: bold;
+}
+#sendInBLueSubmit{
+	color: white; 
+	background: #d60b52; 
+	display: inline-block; 
+	white-space: nowrap; 
+	min-height: 40px; 
+	margin: 0px 5px 0px 0px; 
+	padding: 0px 10px; 
+	text-decoration: none; 
+	text-transform: uppercase; 
+	text-align: center; 
+	font-weight: bold; 
+	font-style: normal; 
+	font-size: 15px; 
+	cursor: pointer; border: 0px; border-radius: 4px; vertical-align: top; height: auto; line-height: 150%;
+}
+#happyYouView #happyYouContinuer{
+	font-size: 13px;
+	padding: 12px;
+	margin: 0;
+	color: grey;
+	background: transparent;
+}
+
+.innerSex{
+	display: inline-block;
+	margin-right: 15px;
+	/*width: 50%;
+	float: left;*/
+}
+
+#kendoUiMobileApp .km-view#appDrawer{
+    background: #d60b52;
+}
+
+#kendoUiMobileApp.km-flat .km-view#appDrawer.km-drawer .km-content{
+    background: transparent;
+}
+
+#kendoUiMobileApp .km-view#appDrawer .km-list>li{
+    background: #d60b52;
+    color:white;
+}
+
+#kendoUiMobileApp #menutop{
+    color:#fff;
+}
+.km-widget.km-tabstrip > .km-button{
+    background: silver;
+}
+.km-widget.km-tabstrip > .km-button.km-state-active{
+    background: #d60b52;
+}
+#menu-gauche > li{
+    border-bottom-width: 1px !important;
+    border-bottom-color: #fff;
+}
+#menu-gauche > li > a > img{
+    position: relative;
+    top:3px;
+    display: inline-block;
+    margin-right:8px;
+}
+#menu-gauche > li > a > span{
+    position: relative;
+    top:-8px;
+}
+#menu-gauche > li > a > img#home-menu{
+    position: relative;
+    top:4px;
+    width:34px;
+}
+#menu-gauche .km-listview-link:after{
+    color:#fff !important;
+}
+#menu-haut-promotions{
+    width : 100%;
+    background: #d60b52 ; 
+    margin-top : 0;
+    overflow: hidden; 
+    white-space: nowrap;
+    padding-bottom: 0px;
+    padding-top : 2px;
+}
+#menu-haut-promotions > span {
+    display: inline-block ;
+    margin-right:20px;
+    margin-left:20px;
+    text-align:center;
+    padding-bottom:8px;
+    color : #fff;
+    opacity: 0.9;
+    font-weight: bold;
+}
+#menu-haut-promotions > span.active {
+    color : #000 ;
+    border-bottom:3px solid #000;
+    opacity: 1;
+}
+#detailUnEvt .description{
+    padding-top:10px;
+}
+
+
+.ribbon {
+  position: absolute;
+  right: -5px; top: -5px;
+  z-index: 1;
+  overflow: hidden;
+  width: 100px; height: 100px;
+  text-align: right;
+}
+.ribbon span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #FFF;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 30px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  width: 130px;
+  display: block;
+  background: #79A70A;
+  background: linear-gradient(#F70505 0%, #8F0808 100%);
+  box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 26px; 
+  right: -25px;
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<widget id="com.mikodigital.promosliege" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>commikodigitalpromosliege</name>
+  <description>
+ Toutes vos promotions en une application 
+</description>
+  <author email="Miko Digital LLC" href="">
+ Miko Digital LLC 
+</author>
+  <content src="index.html"/>
+  <access origin="*"/>
+  <allow-intent href="http://*/*"/>
+  <allow-intent href="https://*/*"/>
+  <allow-intent href="tel:*"/>
+  <allow-intent href="sms:*"/>
+  <allow-intent href="mailto:*"/>
+  <allow-intent href="geo:*"/>
+  <platform name="android">
+    <allow-intent href="market:*"/>
+    <preference name="splashscreen" value="splashscreen"/>
+    <preference name="splashScreenDelay" value="10000"/>
+  </platform>
+  <platform name="ios">
+    <allow-intent href="itms:*"/>
+    <allow-intent href="itms-apps:*"/>
+  </platform>
+  <plugin name="com.telerik.plugin.telerikanalytics" spec="/Users/builder/.TelerikPluginsCache/com.telerik.plugin.telerikanalytics/3.4.1">
+    <variable name="AUTO_TRACK_EXCEPTIONS" value="True"/>
+    <variable name="AUTO_TRACK_KENDO_EVENTS" value="True"/>
+    <variable name="PRODUCT_ID" value="52e371b182d54ed4b81d2794686362fd"/>
+  </plugin>
+  <plugin name="cordova-plugin-file" spec="./cordova-plugin-file"/>
+  <plugin name="cordova-plugin-file-transfer" spec="./cordova-plugin-file-transfer"/>
+  <plugin name="cordova-plugin-inappbrowser" spec="./cordova-plugin-inappbrowser"/>
+  <plugin name="cordova-plugin-network-information" spec="./cordova-plugin-network-information"/>
+  <plugin name="cordova-plugin-splashscreen" spec="./cordova-plugin-splashscreen"/>
+  <plugin name="cordova-plugin-statusbar" spec="./cordova-plugin-statusbar"/>
+  <plugin name="cordova-plugin-vibration" spec="./cordova-plugin-vibration"/>
+  <plugin name="cordova-plugin-whitelist" spec="./cordova-plugin-whitelist"/>
+  <plugin name="com.phonegap.plugins.PushPlugin" spec="/Users/builder/.TelerikPluginsCache/com.phonegap.plugins.PushPlugin/3.2.0"/>
+  <plugin name="nl.x-services.plugins.socialsharing" spec="/Users/builder/.TelerikPluginsCache/nl.x-services.plugins.socialsharing/5.0.11"/>
+  <plugin name="com.telerik.cordovaPlatformSpecificFiles" spec="./cordova-platform-specific-files"/>
+</widget>

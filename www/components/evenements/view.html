@@ -1,0 +1,27 @@
+<div id="evenementsView" data-role="view" data-layout="main" data-model="app.evenements" data-before-show="app.evenements.beforeShow" data-show="app.evenements.onShow" data-after-show="app.evenements.afterShow">
+        <div class="mikoLoader"><img src="resources/loader.gif" /></div>
+        <div id="container-swipe">
+            <ul id="evenementsList"
+                class="liste" 
+                data-role="listview"
+                data-style="" 
+                data-template="evenementsTemplate" 
+                data-bind="{ source: evenementsModel.dataSource,events: {click:evenementsModel.itemClick}}"
+                data-pull-to-refresh="true" 
+                data-endless-scroll="false"
+                data-auto-bind="false"
+                >
+            </ul>    
+        </div>
+       
+        <script type="text/x-kendo-template" id="evenementsTemplate">
+            <div data-tap="onTapEvt"  data-uid="#: data['uid']#" class="details#: data['hideImage'] #">
+                <div class="listImageContainer#: data['hideImage'] #" style="background-image: url('#: data['image'] #');">
+                    
+                </div>
+                <h3 class="commercant #: data['withImage'] #">#: data['title'] #</h3>
+                <p class="nom #: data['withImage'] #">Du #: data['du'] # au #: data['au'] #</p>
+                <div class="breaker"></div>
+            </div>
+        </script>
+</div>

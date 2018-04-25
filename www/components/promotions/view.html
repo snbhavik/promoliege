@@ -1,0 +1,94 @@
+<div id="promotionsView" data-role="view" data-layout="main" data-model="app.promotions" data-before-show="app.promotions.beforeShow" data-show="app.promotions.onShow" data-after-show="app.promotions.afterShow">
+
+        <div class="mikoLoader"><img src="resources/loader.gif" /></div>
+        <div id="container-swipe">
+        <h2 style="display:none" id="categorie-vide">
+            <center>La catégorie est vide</center>
+        </h2>
+        <ul id="promotionsList"
+            class="liste" 
+            data-role="listview"
+            data-style="" 
+            data-template="promotionsTemplate" 
+            data-bind="{ source: promotionsModel.dataSource}"
+            data-pull-to-refresh="true" 
+            data-endless-scroll="false"
+            data-auto-bind="false"
+            >
+        </ul>    
+        <ul id="concoursList"
+            class="liste" 
+            data-role="listview"
+            data-style="" 
+            data-template="concoursTemplate" 
+            data-bind="{ source: concours.concoursModel.dataSource}"
+            data-pull-to-refresh="false" 
+            data-endless-scroll="false"
+            data-auto-bind="true"
+            style="display:none"
+        >
+        </ul>
+        </div>
+        <script type="text/x-kendo-template" id="promotionsTemplate">
+			# if(''!=data['deal_url']) { #
+				<div data-promotion-uid="#: data['uid'] #" data-role="touch" id="promo#: data['uid'] #"  data-deal-url="#: data['deal_url'] #" data-tap="onTapDeal" class="details#: data['hideImage'] ##: data['interested'] # isAdeal">
+					<div class="listImageConteneur#: data['hideImage'] #">
+						<img class="promoImage" src="#: data['imageUrl'] #" />
+                        # if(data['reduction']) { # 
+                            <div class="ribbon"><span>#: data['reduction'] # #: data['type_reduction'] #</span></div>
+                        # } #
+					</div>
+                    <div class="auto-padding">
+                        <p class="nom">#: data['nom'] #</p>
+                        <p class="nom-commerce">
+                            #: data['commercant_nom'] #
+                        </p>
+                        <p class="nom-ville">
+                            #: data['commercant_adresse'] #
+                        </p>
+                        <div class="prix-produit">
+                            <span class="ancien-prix"> &euro; #: data['ancien_prix'] #  </span>
+                            <span class="nouveau-prix"> &euro; #: data['nouveau_prix'] # </span>
+                        </div>
+                        <div class="breaker"></div>
+                    </div>					
+				</div>	
+			# }else{ #
+				<div data-role="touch" id="promo#: data['uid'] #"  data-promotion-uid="#: data['uid'] #" data-tap="onTapPromo" class="details#: data['hideImage'] ##: data['interested'] #">
+					<div class="listImageConteneur#: data['hideImage'] #">
+						<img class="promoImage" src="#: data['imageUrl'] #" />
+					    # if(data['reduction']) { # 
+                            <div class="ribbon"><span>#: data['reduction'] # #: data['type_reduction'] #</span></div>
+                        # } #
+                    </div>
+                    <div class="auto-padding">
+    					<p class="nom">#: data['nom'] #</p>
+    					<p class="nom-commerce">
+                            #: data['commercant_nom'] #
+                        </p>
+                        <p class="nom-ville">
+                            #: data['commercant_adresse'] #
+                        </p>
+    					<div class="breaker"></div>
+                    </div>
+				</div>
+			# } #
+        </script>
+        <script type="text/x-kendo-template" id="lienTemplate">
+            # for (var i = 0; i < data.length; i++) { #
+                <span data-id="#:data[i]['Id']#" class="span#:i+2#">#: data[i]['nom']# <b></b></span>
+            # } #
+        </script>
+
+        <script type="text/x-kendo-template" id="concoursTemplate">
+        <div class="details#: data['hideImage'] #">
+            <div class="listImageContainer#: data['hideImage'] #">
+                <img class="promoImage" src="#: data['imageUrl'] #" />
+            </div>
+            <h3 class="commercant #: data['withImage'] #">#: data['titre'] #</h3>
+            <p class="nom #: data['withImage'] #">Du #: data['date1'] # au #: data['date2'] #</p>
+            <a data-url="#: data['url'] #" class="concoursLien#: data['ctaClass'] #" data-click="launchConcours" data-role="button" data-icon="action">#: data['cta'] #</a>
+            <div class="breaker"></div>
+        </div>
+        </script>
+</div>

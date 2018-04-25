@@ -1,0 +1,153 @@
+#kendoUiMobileApp #promotionsList .auto-padding{
+	padding : 20px;
+}
+#kendoUiMobileApp #promotionsList .details img{
+	display: block;
+	max-width: 100%;
+}
+#kendoUiMobileApp #promotionsList .details p.nom{
+	font-size : 18px ;
+	margin-left: 0px !important;
+	color : black;
+	line-height: 20px !important;
+}
+#kendoUiMobileApp #promotionsList .details p.nom-commerce{
+	font-size : 15px ;
+	color:#9f9f9f;
+	margin-left: 0px !important;
+	position: relative;
+	margin-top:15px;
+	line-height: 16px;
+	margin-bottom:5px;
+}
+#kendoUiMobileApp #promotionsList .details p.nom-ville{
+	font-size : 15px ;
+	color:#9f9f9f;
+	margin-left: 0px !important;
+	position: relative;
+}
+#kendoUiMobileApp #promotionsList .details div.prix-produit{
+	position:relative;
+	margin-top:20px;
+	text-align: right;
+	padding-right: 10px;
+}
+.nouveau-prix{
+	color: #3bbd41;
+	font-size:16px;
+}
+.ancien-prix{
+	color : #a1a1a1;
+	font-size:12px;
+	text-decoration:line-through;
+}
+#detailUnePromo{
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+	padding-top: 0px !important;
+}
+
+#kendoUiMobileApp .details#detailUnePromo #imageContainer{
+	border-bottom: none;
+}
+
+#kendoUiMobileApp .details#detailUnePromo .detailUnePromo{
+	padding: 20px;
+}
+
+.detailUnePromo .nom{
+	margin-left: 0;
+	margin-right: 0;
+	font-weight: normal;
+}
+
+.detailUnePromo h3.commercant{
+	margin-left: 0;
+	margin-right: 0;
+	color : gray !important;
+	font-weight: normal;
+	margin-bottom: 0 !important;
+}
+
+.detailUnePromo h3.datevalidite{
+	margin-left: 0;
+	margin-right: 0;
+	color : gray !important;
+	font-weight: normal;
+	margin-top: 0;	
+	margin-bottom: 20px !important;
+}
+
+.prix-produit-detail{
+	text-align: right;
+}
+.prix-produit-detail .ancien-prix{
+	font-size:14px;
+}
+.prix-produit-detail .nouveau-prix{
+	font-size:18px;
+}
+.bouton-acheter-container{
+	background: #40bf46;
+	color:white;
+	font-size:15px;
+	text-align: center;
+	padding-top: 0px;
+	padding-bottom: 13px;
+	margin-top: 35px;
+	margin-bottom: 35px;
+	cursor: pointer;
+}
+.bouton-acheter-container img{
+	height: 30px;
+	position: relative;
+	top:10px;
+}
+.bouton-dispo-container{
+	color: grey;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 13px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    cursor: normal;
+}
+.bouton-dispo-container img {
+    height: auto;
+    position: relative;
+    top: 0;
+    display: block;
+    margin: auto;
+    width: 200px;
+}
+.slick-dots li button:before{
+	font-size:10px !important;
+}
+#kendoUiMobileApp .details#detailUnePromo img#promoImage{
+	padding-top: 0 !important;
+}
+.gray{
+	color: gray !important;
+}
+.black{
+	color: black !important;
+}
+.mt0{
+	margin-top: 0 !important;
+}
+.pt0{
+	padding-top: 0 !important;
+}
+.font15{
+	font-size: 15px !important;
+}
+.font20{
+	font-size: 20px !important;
+}
+.font18{
+	font-size: 18px !important;
+}
+.detailUnePromo .nom.bold{
+	font-weight: bolder;
+}

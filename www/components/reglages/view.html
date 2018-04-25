@@ -1,0 +1,81 @@
+<div id="reglagesView" data-role="view" data-layout="main" data-model="app.reglages" data-before-show="app.reglages.beforeShow" data-show="app.reglages.onShow" data-after-show="app.reglages.afterShow">
+ 	<div id="settingsHappyYou" class="advancedSetting" data-click="app.reglages.showHappyYou" data-role="button" >
+        <img src="resources/birthday-cake.png" />
+        <h3>30 Crazy Days</h3>
+        <span data-bind="text: happyYouText">...</span>
+        <div class="breaker"></div>
+	</div>
+	<div id="notifications" class="advancedSetting" data-click="app.reglages.showNotificationPanel" data-role="button" >
+        <img src="resources/notifications.png" />
+        <h3>Notifications</h3>
+        <span data-bind="text: notifications">...</span>
+        <div class="breaker"></div>
+	</div>
+    <div class="mikoLoader"><img src="resources/loader.gif" /></div>
+    <ul id="reglagesListe" class="liste" data-role="listview" data-template="reglagesTemplate" 
+        data-bind="events: {dataBinding : reglagesModel.initiate,click : reglagesModel.itemClick},source: reglagesModel.dataSource"
+        data-pull-to-refresh="true" data-endless-scroll="false">
+    </ul>
+    <script type="text/x-kendo-template" id="reglagesTemplate">
+        <div class="reglage" data-id="#: data['id'] #" id="reglage_#: data['id'] #">
+            <h3 class="categorie">#: data['nom'] #</h3>
+            <img src="resources/star.png" class="oui"/>
+            <img src="resources/stargrise.png" class="non"/>
+            <div style="clear:both;"></div>
+        </div>
+    </script>
+     <div data-role="modalview" id="reglagesOfflineMessage" class="modal">
+        <p>
+            Désolé, vous devez être connecté à internet pour modifier vos préférences de notification.
+        </p>
+        <p>
+             <a data-role="button" data-click="app.reglages.reglagesModel.closeModal">Retour</a>
+        </p>
+    </div>
+    
+     <div data-role="modalview" id="giveHint" class="modal">
+
+        <h3>
+            Vos centres d'intérêt ont bien été enregistrés.
+        </h3>
+         <p>
+             <a data-role="button" data-click="app.reglages.seePromos" data-icon="cadeau">Voir mes promotions</a>
+        </p>
+        <p>
+             <a data-role="button" data-click="app.reglages.continueSettings" data-icon="reglages">Terminer ma sélection</a>
+        </p>
+    </div>
+    
+    <div data-role="modalview" id="notificationsPanel" class="modal">
+        <h3>
+            Fréquence de notification
+        </h3>
+        <form>
+            <ul class="form-content" data-role="listview" data-style="inset">
+                <li>
+                    <label>Instantanément
+                        <input value="Instantanément" data-bind="checked: notifications,events: { click: submitNotificationChange }" type="radio" name="group1">
+                    </label>
+                </li>
+                <li>
+                    <label>Une fois par jour
+                        <input value="Une fois par jour" data-bind="checked: notifications,events: { click: submitNotificationChange }" type="radio" name="group1">
+                    </label>
+                </li>
+                <li>
+                    <label>Une fois par semaine
+                        <input value="Une fois par semaine" data-bind="checked: notifications,events: { click: submitNotificationChange }" type="radio" name="group1">
+                    </label>
+                </li>
+                <li>
+                    <label>Jamais
+                        <input value="Jamais" data-bind="checked: notifications,events: { click: submitNotificationChange }" type="radio" name="group1">
+                    </label>
+                </li>
+            </ul>
+        </form>
+        <p>
+             <a data-role="button" data-click="app.reglages.closeNotificationPanel">Annuler</a>
+        </p>
+    </div>
+</div>

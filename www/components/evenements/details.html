@@ -1,0 +1,17 @@
+<div id="unEvenement" data-role="view" data-layout="main" data-model="app.evenements.evenementsModel" data-before-show="app.evenements.evenementsModel.detailsBeforeShow" data-bind="events: { show: detailsShow }">
+	<div id="detailUnEvt" class="details">
+		<h3 class="commercant" data-bind="text: currentItem.title"></h3>
+		<div id="imageContainer">
+			<img id="promoImage" data-bind="attr: { src: currentItem.image }" />
+        </div>
+        <p class="conditions">
+        	Du <span data-bind="text: currentItem.du"></span> Au  <span data-bind="text: currentItem.au"></span>
+        </p>
+        <p class="description">
+            <span data-bind="text: currentItem.description"></span>
+        </p>
+        <p class="actions">
+            <a id="commercantWeb" data-click="launchWebEvt" data-role="button" data-icon="globe">Site Web</a>
+        </p>
+	</div>
+</div>

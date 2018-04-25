@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <link href="bower_components/kendo-ui-appbuilder-core/styles/kendo.mobile.all.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"  href="lib/slick/slick.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="lib/slick/slick-theme.css">
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/promosliege.css" rel="stylesheet">
+    <link href="styles/liste.css" rel="stylesheet">
+
+    <!-- cordova script (this will be a 404 during development if served with `grunt serve`) -->
+    <script src="cordova.js"></script>
+
+    <script src="bower_components/kendo-ui-appbuilder-core/js/jquery.min.js"></script>
+    <script src="bower_components/kendo-ui-appbuilder-core/js/kendo.mobile.min.js"></script>
+    <script src="bower_components/everlive/min/everlive.all.min.js"></script>
+    <script type="text/javascript" src="lib/slick/slick.js"></script>
+    <script src="lib/progress/progress.all.min.js"></script>
+    <script src="app.js"></script>
+    <script src="dataProviders/promosLiegeBackend.js"></script>
+	
+</head>
+
+<body id="kendoUiMobileApp">
+
+	<script src="components/happyyou/index.js"></script>
+    <script src="components/categories/index.js"></script>
+    <script src="components/promotions/index.js"></script>
+	<script src="components/concours/index.js"></script>
+    <script src="components/reglages/index.js"></script>
+    <script src="components/evenements/index.js"></script>
+
+    <div id="appDrawer" data-role="drawer" data-title="Navigation" data-swipe-to-open-views='["reglagesView","happyYouView","categorieView"]'>
+        <ul id="menu-gauche" data-role="listview">
+            <li>
+                <a href="components/promotions/view.html" >
+                    <img src="resources/home-big.png" id="home-menu"/>
+                    <span>Accueil</span>
+                </a>
+            </li>
+            <li>
+                <a href="components/evenements/view.html" >
+                    <img src="resources/icone-evenements.png" id="home-menu"/>
+                    <span>Events</span>
+                </a>
+            </li>
+            <li>
+                 <a href="components/reglages/view.html" data-icon="">
+                    <img src="resources/reglages.png" id="reglages"/>
+                    <span>Préférences</span>
+                </a>
+            </li>
+            <li>
+                <a id="mesAchats">
+                    <img src="resources/shopping-cart-3.png" id="home-menu"/>
+                    <span>Mes achats</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div data-role="layout" data-id="main">
+        <header data-role="header">
+            <a id="retour" class="back btnretour" data-role="backbutton"><img src="resources/gauche.png" /></a>
+            <a class="menutop" data-role="button" href="#appDrawer" data-rel="drawer" id="menutop"><img src="resources/menu-1-24.png"/></a>
+            <img src="resources/logo-blanc.png" id="logo"/>
+			<a id="launchCategories" data-click="app.openCategoriesModal" data-role="button" data-icon="organize">Trier</a>
+            <div style="display:none" class="menu-haut-promotions" id="menu-haut-promotions"></div>
+        </header>
+
+        <!-- application views will be rendered here -->
+
+        <footer data-role="footer">
+            <div data-role="tabstrip" id="navigation-container">
+
+            </div>
+        </footer>
+    </div>
+	<div data-role="layout" data-id="happy">
+        <header data-role="header">
+            <img src="resources/logo-blanc.png" id="logo"/>
+        </header>
+
+        <!-- application views will be rendered here -->
+
+        
+    </div>
+
+</body>
+
+</html>

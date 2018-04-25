@@ -1,0 +1,50 @@
+<div id="unePromo" data-role="view" data-layout="main" data-model="app.promotions.promotionsModel" data-before-show="app.promotions.promotionsModel.detailsBeforeShow" data-bind="events: { show: detailsShow }">
+   
+    
+    <div class="mikoLoader"><img src="resources/loader.gif" /></div>
+    
+	<div id="detailUnePromo" class="details">
+        <div style="overflow:hidden">
+            <div id="imageContainer">
+    			<img id="promoImage" data-bind="attr: { src: currentItem.imageUrl }" />
+            </div>
+        </div>
+        <div class="detailUnePromo pt0">  
+            <h2 class="nom black font18 bold mt0" data-bind="text: currentItem.nom"></h2>          
+            <h3 class="commercant font15" data-bind="text: currentItem.commercant_nom"></h3>
+            <h3 class="datevalidite font15" data-bind="text: currentItem.conditions"></h3>
+
+            <div class="prix-produit-detail" id="detailsViewPrix">
+                <span class="ancien-prix">€ <span data-bind="text:currentItem.ancien_prix"></span></span>
+                <span class="nouveau-prix">€ <span data-bind="text:currentItem.nouveau_prix"></span></span>
+             </div>
+
+            <div class="bouton-acheter-container">
+                <img src="resources/shopping-cart-3.png"/> <span>Acheter maintenant</span>
+            </div>
+
+            <div class="bouton-dispo-container">
+                <img src="resources/commercant.png"/> <span>Disponible sur place</span>
+            </div>
+            
+            <ul id="pdvs" data-role="listview"  data-template="pdvsTemplate" data-bind="{source: currentItem.pdvs }">
+                
+        	</ul>
+        </div>
+    </div>
+   
+</div>
+
+    <script type="text/x-kendo-template" id="pdvsTemplate">
+        <p class="informations gray">
+            <span >#: data['adresse'] #</span><br/>
+            <span class="horaire" >#= data['horaire'] #</span><br/>
+            # if(data['telephone']) { #
+            <a class="telephone" href="tel:+32#: data['telephone'] #" data-role="button" data-rel="external" data-icon="myPhone"> 
+                Téléphoner
+              </span>
+           	</a>
+             # } #
+            <a class="adresse" href="#: data['adresse'] #" data-role="button" data-rel="external" data-icon="myMap">Itinéraire</a>
+        </p>
+    </script>
