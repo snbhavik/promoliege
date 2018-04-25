@@ -15,6 +15,7 @@
   <allow-intent href="sms:*"/>
   <allow-intent href="mailto:*"/>
   <allow-intent href="geo:*"/>
+  <preference name='phonegap-version' value='cli-7.0.1' />
   <platform name="android">
     <allow-intent href="market:*"/>
     <preference name="splashscreen" value="splashscreen"/>
@@ -24,7 +25,7 @@
     <allow-intent href="itms:*"/>
     <allow-intent href="itms-apps:*"/>
   </platform>
-  <plugin name="cordova-plugin-file" spec="./cordova-plugin-file"/>
+  <plugin name="cordova-plugin-file" spec="plugins/cordova-plugin-file"/>
   <plugin name="cordova-plugin-file-transfer" spec="./cordova-plugin-file-transfer"/>
   <plugin name="cordova-plugin-inappbrowser" spec="./cordova-plugin-inappbrowser"/>
   <plugin name="cordova-plugin-network-information" spec="./cordova-plugin-network-information"/>
