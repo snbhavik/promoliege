@@ -15,6 +15,7 @@
   <allow-intent href="sms:*"/>
   <allow-intent href="mailto:*"/>
   <allow-intent href="geo:*"/>
+  <preference name='phonegap-version' value='cli-7.0.1' />
   <platform name="android">
     <allow-intent href="market:*"/>
     <preference name="splashscreen" value="splashscreen"/>
@@ -24,7 +25,14 @@
     <allow-intent href="itms:*"/>
     <allow-intent href="itms-apps:*"/>
   </platform>
-  x
+  <plugin name="cordova-plugin-file" spec="./cordova-plugin-file"/>
+  <plugin name="cordova-plugin-file-transfer" spec="./cordova-plugin-file-transfer"/>
+  <plugin name="cordova-plugin-inappbrowser" spec="./cordova-plugin-inappbrowser"/>
+  <plugin name="cordova-plugin-network-information" spec="./cordova-plugin-network-information"/>
+  <plugin name="cordova-plugin-splashscreen" spec="./cordova-plugin-splashscreen"/>
+  <plugin name="cordova-plugin-statusbar" spec="./cordova-plugin-statusbar"/>
+  <plugin name="cordova-plugin-vibration" spec="./cordova-plugin-vibration"/>
+  <plugin name="cordova-plugin-whitelist" spec="./cordova-plugin-whitelist"/>
   <plugin name="com.phonegap.plugins.PushPlugin" spec="/Users/builder/.TelerikPluginsCache/com.phonegap.plugins.PushPlugin/3.2.0"/>
   <plugin name="nl.x-services.plugins.socialsharing" spec="/Users/builder/.TelerikPluginsCache/nl.x-services.plugins.socialsharing/5.0.11"/>
   <plugin name="com.telerik.cordovaPlatformSpecificFiles" spec="./cordova-platform-specific-files"/>
