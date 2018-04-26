@@ -34,12 +34,6 @@
         "com.phonegap.plugins.PushPlugin": {
             "PACKAGE_NAME": "com.mikodigital.promosliege"
         },
-        "nl.x-services.plugins.socialsharing": {
-            "PACKAGE_NAME": "com.mikodigital.promosliege"
-        },
-        "com.telerik.cordovaPlatformSpecificFiles": {
-            "PACKAGE_NAME": "com.mikodigital.promosliege"
-        }
     },
     "dependent_plugins": {
         "uk.co.whiteoctober.cordova.appversion": {
