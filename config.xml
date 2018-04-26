@@ -34,5 +34,6 @@
   <plugin name="cordova-plugin-statusbar" spec="https://github.com/Icenium/cordova-plugin-statusbar#b3139a0eae6f001e8cd805b07aea86780694a5c1" />
   <plugin name="cordova-plugin-vibration" spec="https://github.com/apache/cordova-plugin-vibration#fcc6f19a087fe620c63b79a270f5b8a033a1791e" />
   <plugin name="cordova-plugin-whitelist" spec="https://github.com/apache/cordova-plugin-whitelist#79f74a00e2b0bbd865fab7f006343e85b45a2f3c" />
-  <!-- <plugin name="com.phonegap.plugins.PushPlugin" spec="3.2.0" source="npm"/> -->
+  <plugin name="cordova-plugin-whitelist" spec="https://github.com/apache/cordova-plugin-whitelist#79f74a00e2b0bbd865fab7f006343e85b45a2f3c" />
+  <plugin name="com.adobe.phonegap.push.PushPlugin" spec="https://github.com/phonegap/phonegap-plugin-push"/>
 </widget>
