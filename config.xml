@@ -26,13 +26,13 @@
     <allow-intent href="itms:*"/>
     <allow-intent href="itms-apps:*"/>
   </platform>
-  <plugin name="cordova-plugin-file" spec="1.3.3" />
-  <plugin name="cordova-plugin-file-transfer" spec="1.7.1" />
-  <plugin name="cordova-plugin-inappbrowser" spec="1.7.2" />
-  <plugin name="cordova-plugin-network-information" spec="1.3.4" />
-  <plugin name="cordova-plugin-splashscreen" spec="1.0.0" />
-  <plugin name="cordova-plugin-statusbar" spec="1.0.1" />
-  <plugin name="cordova-plugin-vibration" spec="1.2.0" />
-  <plugin name="cordova-plugin-whitelist" spec="1.3.3" />
+  <plugin name="cordova-plugin-file" spec="https://github.com/apache/cordova-plugin-file#db39e7ccab1df556f9bff6ce4e748eac703c41da" />
+  <plugin name="cordova-plugin-file-transfer" spec="https://github.com/apache/cordova-plugin-file-transfer#aee45754a9d685ac867a9d0fbb843a66d2845551" />
+  <plugin name="cordova-plugin-inappbrowser" spec="https://github.com/apache/cordova-plugin-inappbrowser#009e662c82f4fa153f0d0ccc14995ddb3b495de5" />
+  <plugin name="cordova-plugin-network-information" spec="https://github.com/apache/cordova-plugin-network-information#0079edbaa5e24419ea383d918cbe960d3d4cae99" />
+  <plugin name="cordova-plugin-splashscreen" spec="https://github.com/apache/cordova-plugin-splashscreen#782939f7ef27b2955a16f77c9bba9e66af9f53a0" />
+  <plugin name="cordova-plugin-statusbar" spec="https://github.com/Icenium/cordova-plugin-statusbar#b3139a0eae6f001e8cd805b07aea86780694a5c1" />
+  <plugin name="cordova-plugin-vibration" spec="https://github.com/apache/cordova-plugin-vibration#fcc6f19a087fe620c63b79a270f5b8a033a1791e" />
+  <plugin name="cordova-plugin-whitelist" spec="https://github.com/apache/cordova-plugin-whitelist#79f74a00e2b0bbd865fab7f006343e85b45a2f3c" />
   <!-- <plugin name="com.phonegap.plugins.PushPlugin" spec="3.2.0" source="npm"/> -->
 </widget>
