@@ -35,5 +35,5 @@
   <plugin name="cordova-plugin-vibration" spec="https://github.com/apache/cordova-plugin-vibration#fcc6f19a087fe620c63b79a270f5b8a033a1791e" />
   <plugin name="cordova-plugin-whitelist" spec="https://github.com/apache/cordova-plugin-whitelist#79f74a00e2b0bbd865fab7f006343e85b45a2f3c" />
   <plugin name="cordova-plugin-whitelist" spec="https://github.com/apache/cordova-plugin-whitelist#79f74a00e2b0bbd865fab7f006343e85b45a2f3c" />
-  <plugin name="com.phonegap.plugins.PushPlugin" spec="com.phonegap.plugins.PushPlugin"/>
+  <!-- <plugin name="com.phonegap.plugins.PushPlugin" spec="3.2.0" source="npm"/> -->
 </widget>
