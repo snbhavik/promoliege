@@ -31,9 +31,6 @@
         "cordova-plugin-vibration": {
             "PACKAGE_NAME": "com.mikodigital.promosliege"
         },
-        "com.phonegap.plugins.PushPlugin": {
-            "PACKAGE_NAME": "com.mikodigital.promosliege"
-        },
     },
     "dependent_plugins": {
         "uk.co.whiteoctober.cordova.appversion": {

@@ -81,14 +81,6 @@
         "is_top_level": true,
         "variables": {}
     },
-    "com.phonegap.plugins.PushPlugin": {
-        "source": {
-            "type": "local",
-            "path": "/Users/builder/.TelerikPluginsCache/com.phonegap.plugins.PushPlugin/3.2.0"
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
     "cordova-plugin-device": {
         "source": {
             "type": "registry",

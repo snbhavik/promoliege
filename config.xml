@@ -20,6 +20,7 @@
     <allow-intent href="market:*"/>
     <preference name="splashscreen" value="splashscreen"/>
     <preference name="splashScreenDelay" value="10000"/>
+    <icon src="www/resources/logo-alone.png" density="hdpi" />
   </platform>
   <platform name="ios">
     <allow-intent href="itms:*"/>
@@ -33,5 +34,5 @@
   <plugin name="cordova-plugin-statusbar" spec="~1" source="npm"/>
   <plugin name="cordova-plugin-vibration" spec="~1" source="npm"/>
   <plugin name="cordova-plugin-whitelist" spec="~1" source="npm"/>
-  <plugin name="com.phonegap.plugins.PushPlugin" spec="3.2.0" source="npm"/>
+  <!-- <plugin name="com.phonegap.plugins.PushPlugin" spec="3.2.0" source="npm"/> -->
 </widget>
